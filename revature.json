@@ -1,0 +1,20 @@
+{
+  "type": "java",
+  "testFiles": [
+    {
+      "path": "src/test/java/CreateTableWithPKTest.java",
+      "testCases": [
+        {
+          "methodName": "createTableSurrogateKeyTest",
+          "label": "Validates successful table creation",
+          "description": "Test that the table exists by attempting to insert a row into the table. If table does not exist, the test will fail."
+        },
+        {
+          "methodName": "TestPrimaryKeyUniqueConstraint",
+          "label": "Validates successful primary key constraint creation",
+          "description": "Test that the primary key condition exists by attempting to insert 2 records with the same primary key value. If the primary key constraint does not exist, the test will fail."
+        }
+      ]
+    }
+  ]
+}
